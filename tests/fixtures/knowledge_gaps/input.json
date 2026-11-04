@@ -1,0 +1,111 @@
+{
+  "as_of": "2026-01-01T12:00:00Z",
+  "schema_version": "hermes.gaps.input.v1",
+  "scope": {
+    "account": "example-account",
+    "coverage": "bounded",
+    "policy_revision": "policy-1",
+    "public_external_allowed": false,
+    "tenant": "example-tenant"
+  },
+  "sources": [
+    {
+      "access": "accessible",
+      "account": "example-account",
+      "authorized": true,
+      "capture": "captured",
+      "current": true,
+      "id": "internal-recovery-note",
+      "index": "indexed",
+      "kind": "internal",
+      "observed_at": "2026-01-01T12:00:00Z",
+      "policy_revision": "policy-1",
+      "published_at": null,
+      "revision": "revision-1",
+      "sha256": "f49876c7c70cb1f39535d10f05e25f83b4245f0ca404157b2112c9d078151637",
+      "tenant": "example-tenant",
+      "text": "The retry experiment measured duplicate actions after a restart. A recovery benchmark needs explicit failure cases.",
+      "title": "Internal Recovery Note",
+      "uri": "https://example.test/internal-recovery-note",
+      "withdrawn": false
+    },
+    {
+      "access": "accessible",
+      "account": "example-account",
+      "authorized": true,
+      "capture": "captured",
+      "current": true,
+      "id": "external-research-paper",
+      "index": "indexed",
+      "kind": "external",
+      "observed_at": "2026-01-01T12:00:00Z",
+      "policy_revision": "policy-1",
+      "published_at": null,
+      "revision": "revision-1",
+      "sha256": "48eecc5c39022783a4b3602d85a97717d830397825d94ce93b3d60395d76321a",
+      "tenant": "example-tenant",
+      "text": "Recovery benchmarks should measure duplicate actions and missed completion. Example cases include a restart and a lost acknowledgement.",
+      "title": "External Research Paper",
+      "uri": "https://example.test/external-research-paper",
+      "withdrawn": false
+    },
+    {
+      "access": "accessible",
+      "account": "example-account",
+      "authorized": true,
+      "capture": "captured",
+      "current": true,
+      "id": "draft-recovery-article",
+      "index": "indexed",
+      "kind": "own_draft",
+      "observed_at": "2026-01-01T12:00:00Z",
+      "policy_revision": "policy-1",
+      "published_at": null,
+      "revision": "revision-1",
+      "sha256": "1318cde5ce3aefc69a554e58fd14a1deb1af8966a3c4dd76c9e4fdd7e56ad81f",
+      "tenant": "example-tenant",
+      "text": "I want to explain when a retry is safe. Which failure cases should the recovery example demonstrate?",
+      "title": "Draft Recovery Article",
+      "uri": "https://example.test/draft-recovery-article",
+      "withdrawn": false
+    },
+    {
+      "access": "accessible",
+      "account": "example-account",
+      "authorized": true,
+      "capture": "captured",
+      "current": true,
+      "id": "proposed-writing-topic",
+      "index": "indexed",
+      "kind": "plan",
+      "observed_at": "2026-01-01T12:00:00Z",
+      "policy_revision": "policy-1",
+      "published_at": null,
+      "revision": "revision-1",
+      "sha256": "21b8f5fe65d28806c18ce220fe0bf42bb3c7b0c2307c38208eacfc53297179c8",
+      "tenant": "example-tenant",
+      "text": "Write a concrete recovery example with measurements.",
+      "title": "Proposed Writing Topic",
+      "uri": "https://example.test/proposed-writing-topic",
+      "withdrawn": false
+    }
+  ],
+  "topics": [
+    {
+      "evidence": {
+        "end": 52,
+        "source_id": "proposed-writing-topic",
+        "start": 0
+      },
+      "id": "recovery-example",
+      "intent": "write",
+      "status": "proposed",
+      "terms": [
+        "recovery",
+        "duplicate",
+        "actions"
+      ],
+      "title": "A concrete recovery example"
+    }
+  ]
+}

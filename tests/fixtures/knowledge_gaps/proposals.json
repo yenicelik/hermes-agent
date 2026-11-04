@@ -1,0 +1,39 @@
+[
+  {
+    "basis": "agent_review",
+    "evidence": [
+      {
+        "end": 115,
+        "quote": "The retry experiment measured duplicate actions after a restart. A recovery benchmark needs explicit failure cases.",
+        "revision": "revision-1",
+        "sha256": "f49876c7c70cb1f39535d10f05e25f83b4245f0ca404157b2112c9d078151637",
+        "source_id": "internal-recovery-note",
+        "start": 0
+      },
+      {
+        "end": 135,
+        "quote": "Recovery benchmarks should measure duplicate actions and missed completion. Example cases include a restart and a lost acknowledgement.",
+        "revision": "revision-1",
+        "sha256": "48eecc5c39022783a4b3602d85a97717d830397825d94ce93b3d60395d76321a",
+        "source_id": "external-research-paper",
+        "start": 0
+      },
+      {
+        "end": 100,
+        "quote": "I want to explain when a retry is safe. Which failure cases should the recovery example demonstrate?",
+        "revision": "revision-1",
+        "sha256": "1318cde5ce3aefc69a554e58fd14a1deb1af8966a3c4dd76c9e4fdd7e56ad81f",
+        "source_id": "draft-recovery-article",
+        "start": 0
+      }
+    ],
+    "id": "recovery-example-evidence",
+    "impact": 3,
+    "kind": "missing_connection",
+    "next_step": "Review the experiment evidence and select one measured failure case before revising the draft.",
+    "observation": "The internal note and external paper describe duplicate-action measurements, while the draft asks which failure cases to demonstrate.",
+    "title": "Connect the draft to measured recovery cases",
+    "uncertainty": "These are synthetic fixtures. A real reader must attest permissions, source revisions and the result before using this reasoning.",
+    "why_it_matters": "A sourced example can make the retry explanation more concrete."
+  }
+]

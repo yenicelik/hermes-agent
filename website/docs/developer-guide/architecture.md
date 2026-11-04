@@ -223,6 +223,18 @@ SQLite-based session storage with FTS5 full-text search. Sessions have lineage t
 
 → [Session Storage](./session-storage.md)
 
+### Knowledge and Content Gap Analysis
+
+`hermes knowledge-gaps` compares source-admitted evidence through a versioned,
+read-only JSON interface. It separates capture/index limitations from proposed
+knowledge gaps, binds citations to exact revisions, and compares complete
+candidate sets before selecting a small human-review queue. Source readers own
+authorization and currentness; the module never promotes knowledge or creates
+editorial commitments. Optional embedding experiments remain outside the live
+retrieval path.
+
+→ [Core design and source contracts](https://github.com/yenicelik/hermes-agent/blob/main/docs/design/knowledge-gap-analysis.md)
+
 ### Messaging Gateway
 
 Long-running process with 25+ platform adapters (built-in + bundled plugins), unified session routing, user authorization (allowlists + DM pairing), slash command dispatch, hook system, cron ticking, and background maintenance.
