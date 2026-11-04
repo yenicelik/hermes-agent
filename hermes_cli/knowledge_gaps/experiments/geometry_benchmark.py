@@ -481,7 +481,7 @@ def main(argv: list[str] | None = None) -> int:
                 # can contain private derived data; publish only via the parent.
                 import os
                 fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
-                with os.fdopen(fd, "w") as stream:
+                with os.fdopen(fd, "w", encoding="utf-8") as stream:
                     stream.write(json.dumps(value, sort_keys=True, indent=2, allow_nan=False) + "\n")
         print(json.dumps({"status": "complete", "decision": report["decision"],
                           "counts": report["counts"]}, sort_keys=True))
